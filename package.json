@@ -1,0 +1,14 @@
+{
+  "name": "sqil",
+  "version": "1.0.0",
+  "description": "Register SQIL",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/SQIL.css -w"
+  },
+  "author": "Bilal Sagar Razak",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

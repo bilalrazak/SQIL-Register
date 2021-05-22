@@ -1,0 +1,62 @@
+body {
+    font-family: "Acme";
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-white;
+}
+
+.heading-primary {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    &--head {
+        display: block;
+        font-size: 6rem;
+        letter-spacing: .5rem;
+    }
+    &--sub {
+        display: block;
+        font-size: 1.6rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 20vh;
+        position: relative;
+        &::after {
+            content: "";
+            text-align: center;
+            width:50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 25%;
+            z-index: -1;
+            border-bottom: .2rem solid $color-white;
+            border-top: .2rem solid $color-white;
+        }
+    }
+   
+}
+.heading-secondary {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    margin-bottom:$gaps-head-para ;
+    display: inline-block;
+    background-image: linear-gradient(to right bottom,$color-blue,$color-green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.para {
+    font-size: 2rem;
+    margin-bottom: $gaps-para-para;
+    text-align: justify;
+    padding: 0 1rem;
+    a {
+        text-decoration: none;
+        font-style: italic;
+        color: #777;
+    }
+}
